@@ -35,7 +35,6 @@ git clone https://github.com/username/splashes-lessons.git
 Open the webpage:
 Open lessons.html in your preferred web browser.
 
-
 ⚖️ License
 
 This project is for educational purposes.
