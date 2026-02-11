@@ -35,13 +35,6 @@ git clone https://github.com/username/splashes-lessons.git
 Open the webpage:
 Open lessons.html in your preferred web browser.
 
-📂 Technologies Used
-
-HTML5 – Structure and content
-
-CSS3 + Bootstrap 5 – Styling and responsive design
-
-Font Awesome – Icons for social media and UI
 
 ⚖️ License
 
