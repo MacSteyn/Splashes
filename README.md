@@ -1,31 +1,48 @@
-Splashes Swimming Lessons Website
-Overview
+🌊 Splashes Swimming Lessons Website
+📝 Overview
 
-This is a simple, responsive webpage for Splashes Swimming Lessons, designed to showcase different swimming programs and locations. The page highlights lesson types, contact information, and social media links.
+A clean and responsive webpage for Splashes Swimming Lessons. Designed to showcase swimming programs, lesson types, locations, and social media presence—all in a user-friendly format.
 
-Features
+✨ Features
 
-Lesson Sections: Private, Semi-Private, Parent & Me, Stroke Clinic, Adult Swim Lessons.
+🏊 Lesson Sections:
 
-Logo Section: Displays the Splashes logo at the top.
+Private Lessons
 
-Social Media Links: Quick access to Facebook, Instagram, Twitter, and YouTube.
+Semi-Private Lessons
 
-Locations & Contact: Lists locations with contact numbers.
+Parent & Me Lessons
 
-Responsive Design: Mobile-friendly layout using Bootstrap 5.
+Stroke Clinic
 
+Adult Swim Lessons
 
+🖼 Logo Section: Display the Splashes logo at the top.
 
-How to View
+📱 Social Media Links: Quick access to Facebook, Instagram, Twitter, and YouTube.
+
+📍 Locations & Contact: Lists locations with phone numbers for easy contact.
+
+📐 Responsive Design: Mobile-friendly layout using Bootstrap 5.
+
+🚀 How to View
 
 Clone the repository:
 
 git clone https://github.com/username/splashes-lessons.git
 
 
-Open lessons.html in any web browser.
+Open the webpage:
+Open lessons.html in your preferred web browser.
 
-License
+📂 Technologies Used
+
+HTML5 – Structure and content
+
+CSS3 + Bootstrap 5 – Styling and responsive design
+
+Font Awesome – Icons for social media and UI
+
+⚖️ License
 
 This project is for educational purposes.
