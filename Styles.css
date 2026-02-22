@@ -1,0 +1,152 @@
+#index .hero {
+  background: url("images/home.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+#about .hero {
+  background: url("images/about-us-hero.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+#lessons .hero {
+  background: url("images/which-lesson-is-best.jpeg") no-repeat center
+    center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+#program .hero {
+  background: url("images/summer-swim-camps.jpeg") no-repeat center
+    center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+#adult-program .hero {
+  background: url("images/lap-swimming.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+#contact .hero {
+  background: url("images/contact-hero.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.navbar {
+  opacity: 0.9;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Dark overlay for readability */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-buttons .btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.teaching-section {
+  background: url("images/home-hands-on-teaching.jpeg") no-repeat center
+    center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+@media (min-width: 992px) {
+  #locationDropdown {
+    width: 900%;
+    left: -600%;
+    top: 50px;
+    background-color: white;
+    padding: 20px;
+  }
+
+  #locationDropdown a {
+    color: #35BDF4;
+  }
+}
+footer {
+  background: url("images/footer-bg.jpeg") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+#philosophy {
+  background: url("images/about-our-philosophy-bg.jpeg") no-repeat center
+    center;
+  background-size: cover;
+  padding: 100px 0;
+}
+#good-job {
+  background: url("images/about-we-do-a-pretty-good-job-bg.jpeg")
+    no-repeat center center;
+  background-size: cover;
+  height: 400px; /* Or min-height: 400px; if content might be taller */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content (optional) */
+}
+
+#good-job .container {
+  /* Target the container inside */
+  width: 100%; /* Ensure container takes full width */
+}
+
+#good-job .col-md-8 {
+  /* Target the content column */
+  text-align: center; /* Center text within the column */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .teaching-section {
+    background: none; /* Remove background image for smaller screens */
+  }
+}
