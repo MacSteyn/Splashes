@@ -150,3 +150,78 @@ footer {
     background: none; /* Remove background image for smaller screens */
   }
 }
+.location-section {
+  background: url("images/home-our-locations-bg.jpeg") no-repeat center
+    center;
+  background-size: cover;
+  padding: 100px 0;
+  color: white;
+}
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background: #fff;
+  text-align: center;
+  height: 160px;
+}
+.icon-box:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.icon-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.icon-box a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+body {
+  background-color: #f8f9fa;
+}
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 30px;
+}
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 300px;
+}
+.character {
+  position: absolute;
+  left: -50px;
+  top: 0%;
+  width: 100px;
+}
+.form-control {
+  border-radius: 5px;
+}
+.btn-custom {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+}
+.btn-primary {
+  background-color: #bde4f4;
+  border-color: #bde4f4;
+  color: #6c757d;
+}
+.btn-outline-primary {
+  border-color: #17a2b8;
+  color: #17a2b8;
+}
+.forgot-password {
+  text-align: right;
+  font-size: 0.9rem;
+}
