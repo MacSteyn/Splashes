@@ -1,100 +1,125 @@
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimming Lessons | Splashes</title>
 
-  <!-- ================= LOGO SECTION ================= -->
-  <header class="bg-dark text-center py-4">
-    <img src="assets/Graphics/logo-small.png" alt="Splashes Logo" height="60">
-  </header>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- ================= MAIN CONTENT ================= -->
-  <main>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
-    <!-- Page Heading -->
-    <section class="py-5 text-center bg-light">
-      <div class="container">
-        <h1 class="display-4 fw-bold">Which Lesson is Best?</h1>
-      </div>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="lessons">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Splashes Aquatics</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="lessons.html">Swimming Lessons</a></li>
+                <li class="nav-item"><a class="nav-link" href="adultprogram.html">Adult Program</a></li>
+                <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+                <li class="nav-item">
+                    <button class="btn btn-light ms-lg-3" data-bs-toggle="modal" data-bs-target="#authModal">
+                        Register / Sign In
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+    <!-- Hero Section -->
+    <section class="hero py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Which Lesson is Best?</h1>
+        </div>
     </section>
 
     <!-- Lesson Content -->
     <section class="py-5">
-      <div class="container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h2 class="text-center fw-bold mb-4">Our Lesson Types</h2>
 
-        <h3 class="fw-bold">Private Swim Lessons</h3>
-        <p>
-          Our private swim lessons provide one-on-one instruction for students
-          ages three months through adult. Private swim lessons are the best
-          option for accelerated learning and skill development.
-        </p>
+                    <h5>Private Swim Lessons</h5>
+                    <p>
+                        Our private swim lessons provide one-on-one instruction for
+                        students ages three months through adult. Private lessons offer
+                        accelerated learning with minimal downtime and the highest rate
+                        of progress.
+                    </p>
+                    <a href="#">Learn more here!</a>
 
-        <h3 class="fw-bold mt-4">Semi-Private Swim Lessons</h3>
-        <p>
-          Semi-private swim lessons offer students the opportunity to interact
-          with another swimmer of similar age and ability while still receiving
-          personal attention from instructors.
-        </p>
+                    <hr>
 
-        <h3 class="fw-bold mt-4">Parent & Me Lessons</h3>
-        <p>
-          Parent and Me swimming lessons give parents the opportunity to be
-          hands-on with their child while instructors guide the learning process.
-        </p>
+                    <h5>Semi-Private Swim Lessons</h5>
+                    <p>
+                        Semi-private lessons allow students ages 2.5 to 13 to learn with
+                        another swimmer of similar age and ability while still receiving
+                        personal attention in a cost-effective format.
+                    </p>
+                    <a href="#">Learn more here!</a>
 
-        <h3 class="fw-bold mt-4">Stroke Clinic</h3>
-        <p>
-          Stroke Clinics help students advance swimming techniques in a group
-          setting, focusing on proper technique and preparation for swim teams.
-        </p>
+                    <hr>
 
-        <h3 class="fw-bold mt-4">Adult Swim Lessons</h3>
-        <p>
-          Adult swim lessons are available for swimmers ages 13 and older,
-          designed for beginners and advanced swimmers looking to improve
-          technique and confidence.
-        </p>
+                    <h5>Parent & Me Lessons</h5>
+                    <p>
+                        Parent & Me lessons provide a fun and relaxed environment for
+                        parents and children ages 3 months through 3 years, with
+                        instructors guiding the learning process.
+                    </p>
+                    <a href="#">Learn more here!</a>
 
-      </div>
+                    <hr>
+
+                    <h5>Stroke Clinic</h5>
+                    <p>
+                        Stroke Clinics focus on refining swimming technique in a group
+                        setting. These classes are designed for swimmers ages 5 and
+                        older who are level 8 or higher.
+                    </p>
+                    <a href="#">Learn more here!</a>
+
+                    <hr>
+
+                    <h5>Adult Swim Lessons</h5>
+                    <p>
+                        Adult swim lessons are available for swimmers ages 13 and older,
+                        from beginners to advanced. Lessons are tailored to individual
+                        goals and comfort levels.
+                    </p>
+                    <a href="#">Learn more here!</a>
+
+                </div>
+            </div>
+        </div>
     </section>
 
-  </main>
+</main>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="bg-light py-5">
-
-    <div class="container text-center">
-
-      <!-- Social Media -->
-      <section class="mb-4">
-        <h5 class="fw-bold">Follow Us</h5>
-        <a href="#" class="mx-2 text-dark">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="#" class="mx-2 text-dark">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a href="#" class="mx-2 text-dark">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="#" class="mx-2 text-dark">
-          <i class="fab fa-youtube fa-2x"></i>
-        </a>
-      </section>
-
-      <!-- Locations -->
-      <section class="mt-4">
-        <h5 class="fw-bold">Our Locations</h5>
-        <p>Orange County: (949) 450-0777</p>
-        <p>San Diego County: (760) 603-9400</p>
-        <p>Los Angeles County: (626) 836-1200</p>
-        <p>Northern California: (408) 279-1700</p>
-        <p>Denver: (720) 344-7700</p>
-      </section>
-
-      <hr>
-
-      <p class="text-muted">&copy; 2022 Splashes. All Rights Reserved.</p>
-
-    </div>
-
-  </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+</html>
