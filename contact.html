@@ -1,38 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Splashes Aquatics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Splashes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* This ensures the grey header matches your friend's look */
+        .hero { background-color: #ced4da; padding: 100px 0; color: white; }
+        .hero h1 { font-size: 5rem; font-weight: 800; }
+        /* Fix for mega-menu display */
+        .dropdown-menu { min-width: 700px; padding: 20px; }
+    </style>
 </head>
-<body>
+<body id="contact">
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Splashes Aquatics</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/Graphics/logo-small.png" alt="Splashes" height="40" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="lessons.html">Swimming Lessons</a></li>
-                <li class="nav-item"><a class="nav-link" href="adultprogram.html">Adult Program</a></li>
-                <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
-                <li class="nav-item">
-                    <button class="btn btn-light ms-lg-3" data-bs-toggle="modal" data-bs-target="#authModal">
-                        Register / Sign In
-                    </button>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="lessons.html">Swimming Lessons</a></li>
+            <li class="nav-item"><a class="nav-link" href="program.html">Swim Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="adult-program.html">Adult Programs</a></li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="locationsDropdown" role="button" data-bs-toggle="dropdown">Locations</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6 class="fw-bold">Orange County</h6>
+                        <a class="dropdown-item" href="#">Irvine</a>
+                        <a class="dropdown-item" href="#">Huntington Beach</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="fw-bold">Los Angeles</h6>
+                        <a class="dropdown-item" href="#">Culver City</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="fw-bold">Denver</h6>
+                        <a class="dropdown-item" href="#">Highlands Ranch</a>
+                    </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+          </ul>
+          <button class="btn btn-sm rounded-pill bg-white text-primary border-primary">Register / Sign in</button>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero text-center">
+        <div class="container">
+          <h1 class="display-1 fw-bold mb-4">Contact Us</h1>
+        </div>
+      </section>
+
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <p class="fs-5 mb-5">We’d love to help. Send us an email using the form below and a representative will get back to you as soon as possible.</p>
+              
+              <div class="card shadow p-4 text-start">
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                      <label class="form-label fw-bold text-danger">First Name *</label>
+                      <input type="text" class="form-control" placeholder="Abdur" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label class="form-label fw-bold text-danger">Last Name *</label>
+                      <input type="text" class="form-control" placeholder="Rehman" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-bold text-danger">Email Address *</label>
+                    <input type="email" class="form-control" placeholder="name@example.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-bold">Message</label>
+                    <textarea class="form-control" rows="5" placeholder="How can we help you?"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill fw-bold">Submit Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-light py-5 border-top text-center">
+      <div class="container">
+          <p>&copy; 2026 Splashes. All Rights Reserved. | <span class="fw-bold">Designed by Abdur</span></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
