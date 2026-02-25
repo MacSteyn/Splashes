@@ -22,20 +22,123 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="lessons.html">Swimming Lessons</a></li>
-                <li class="nav-item"><a class="nav-link" href="adultprogram.html">Adult Program</a></li>
-                <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
-                <li class="nav-item">
-                    <button class="btn btn-light ms-lg-3" data-bs-toggle="modal" data-bs-target="#authModal">
-                        Register / Sign In
-                    </button>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <!-- Center Navbar Links -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lessons.html">Swimming Lessons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="program.html">Swim Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adult-program.html">Adult Programs</a>
+            </li>
+
+            <!-- Locations Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="locationsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Locations
+              </a>
+              <div class="dropdown-menu" id="locationDropdown">
+                <!-- Full Width Dropdown -->
+                <div class="container-fluid w-full">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h6 class="fw-bold">Orange County</h6>
+                      <a class="dropdown-item" href="#"
+                        >Anaheim Hills @ LA Fitness</a
+                      >
+                      <a class="dropdown-item" href="#">Huntington Beach</a>
+                      <a class="dropdown-item" href="#">Irvine</a>
+                      <a class="dropdown-item" href="#"
+                        >Yorba Linda @ LA Fitness</a
+                      >
+
+                      <h6 class="fw-bold mt-3">San Diego County</h6>
+                      <a class="dropdown-item" href="#">Carlsbad</a>
+                      <a class="dropdown-item" href="#">Poway @ LA Fitness</a>
+
+                      <h6 class="fw-bold mt-3">San Francisco</h6>
+                      <a class="dropdown-item" href="#"
+                        >San Francisco-20th Ave <br />@ City Sports Club</a
+                      >
+                    </div>
+                    <div class="col-md-3">
+                      <h6 class="fw-bold">San Gabriel Valley</h6>
+                      <a class="dropdown-item" href="#"
+                        >Alhambra-Fremont @ LA <br />
+                        Fitness</a
+                      >
+                      <a class="dropdown-item" href="#">Arcadia @ LA Fitness</a>
+                      <a class="dropdown-item" href="#"
+                        >Diamond Bar @ LA Fitness</a
+                      >
+                      <a class="dropdown-item" href="#">Pasadena</a>
+                      <a class="dropdown-item" href="#"
+                        >West Covina @ LA Fitness</a
+                      >
+                      <br />
+                      <h6 class="fw-bold">Los Angeles County</h6>
+                      <a class="dropdown-item" href="#"
+                        >Culver City @ LA Fitness</a
+                      >
+                      <a class="dropdown-item" href="#"
+                        >Harbor City @ LA Fitness</a
+                      >
+                    </div>
+                    <br />
+                    <div class="col-md-3">
+                      <h6 class="fw-bold">Silicon Valley</h6>
+                      <a class="dropdown-item" href="#"
+                        >North San Jose @ City Sports <br />Club</a
+                      >
+                      <a class="dropdown-item" href="#"
+                        >San Jose-Almaden @ City <br />Sports Club</a
+                      >
+                      <a class="dropdown-item" href="#">San Jose-Bascom</a>
+                      <a class="dropdown-item" href="#"
+                        >San Jose-Blossom Hill @ City <br />Sports Club</a
+                      >
+                      <a class="dropdown-item" href="#"
+                        >Sunnyvale @ City Sports Club</a
+                      >
+                      <br />
+                      <h6 class="fw-bold">Alameda County</h6>
+                      <a class="dropdown-item" href="#"
+                        >Hayward @ City Sports Club</a
+                      >
+                      <br />
+                      <h6 class="fw-bold">Denver</h6>
+                      <a class="dropdown-item" href="#">Highlands Ranch</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button
+              class="btn btn-sm rounded-pill bg-white text-primary border-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Register / Sign in
+            </button>
+          </div>
         </div>
     </div>
 </nav>
