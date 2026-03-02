@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Splashes Aquatics</title>
+    <!--Makes website responsive on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS for styling and responsive layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--For Custom CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
++
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>  
+</head>
+<body>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Splashes Aquatics</a>
+        <!--Hamburger button for mobile navigation-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="lessons.html">Swimming Lessons</a></li>
+                <li class="nav-item"><a class="nav-link" href="adultprogram.html">Adult Program</a></li>
+                <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+                <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+               
+
+                <li class="nav-item">
+                    <button class="btn btn-light ms-lg-3"
+                            data-bs-toggle="modal"
+                            data-bs-target="#authModal">
+                        Register / Sign In
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- ================= AUTH MODAL ================= -->
+<div class="modal fade"
+     id="authModal"
+     tabindex="-1"
+     aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="container">
+
+            <div class="text-center">
+              <img src="images/splash-wave.png"
+                   alt="Logo"
+                   class="img-fluid mb-3"
+                   style="max-width: 150px;">
+            </div>
+
+            <div class="text-center">
+
+              <img src="images/shark-full.png"
+                   alt="Character"
+                   class="img-fluid mb-3"
+                   style="max-width: 120px;">
+
+              <h4 class="mb-3">SIGN IN</h4>
+
+              <form>
+                <!-- Email Input -->
+                <div class="mb-3 text-start">
+                  <label class="form-label text-danger">Email *</label>
+                  <input type="email" class="form-control" required>
+                </div>
+                <!-- Password Input -->
+                 <div class="mb-2 text-start">
+                  <label class="form-label text-danger">Password *</label>
+                  <input type="password" class="form-control" required>
+                </div>
+                  <!-- Forgot Password -->
+                <div class="text-end mb-3">
+                  <a href="#" class="text-info">Forgot Password?</a>
+                </div>
+                <!--Buttons-->
+                <div class="d-flex justify-content-center gap-3 mt-4">
+                  <button type="submit" class="btn btn-primary">
+                    Sign In
+                  </button>
+
+                  <button type="button" class="btn btn-outline-primary">
+                    Sign Up
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+                    
+    <!-- Hero Section -->
+    <main>
+      <section class="hero py-5 text-center">
+        <div class="container">
+          <h1 class="display-1 fw-bold mb-4">About Splashes Aquatics</h1>
+        </div>
+      </section>
+
+      <!-- Philosophy / Mission Section -->
+      <section id="philosophy" class="py-5">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4">Our Philosophy</h2>
+          <p>Our mission is to educate and motivate individuals to be safer and learn proper swimming technique.</p>
+          <p>We have chosen to share our love of swimming with children and believe there is a swimmer in every child. We pride ourselves on teaching the necessary skills needed to become a comfortable, proficient swimmer right from the beginning.</p>
+        </div>
+      </section>
+
+      <!-- About Splashes / Description Section -->
+      <section id="about-description" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4">We Do A Pretty Good Job</h2>
+          <p>Experience excellence through Splashes' award-winning programs where safety, fast progress, and a fun environment come first. Join the swim school that loves what they do and it shows.</p>
+          <div class="text-center mt-3">
+            <a href="#" class="btn btn-primary">Hear What Families Are Saying About Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Awards Section -->
+       <!-- Uses Bootstrap grid system -->
+      <section class="awards">
+      <div class="container">
+        <div class="row text-center p-5">
+          <h1 class="fw-bold text-black">Awards We've Won</h1>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/colorado-parenting-family-fav2021.png" class="img-fluid" alt="Award 6">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/bay-area-parent-gold2020.png" class="img-fluid" alt="Award 2">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/mla-swim-lessons-winner-2020-250x250.png" class="img-fluid" alt="Award 6">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/colorado-parenting-family-fav2020.png" class="img-fluid" alt="Award 6">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/website-parenting-oc-2019.jpeg" class="img-fluid" alt="Award 6">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/colorado-parenting-family-fav2019.jpeg" class="img-fluid" alt="Award 6">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/bay-area-parent-2019.jpeg" class="img-fluid" alt="Award 1">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/best-of-la-kids-winner.jpeg" class="img-fluid" alt="Award 4">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/gold-daisy-award-finalist-2018.jpeg" class="img-fluid" alt="Award 6">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="images/awards/best-of-the-best-2018.jpeg" class="img-fluid" alt="Award 5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light py-5">
+      <div class="container text-center">
+        <img
+          src="images/wave-small.png"
+          alt="Splashes Logo"
+          class="mb-5 img-fluid"
+        />
+
+        <div class="row">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100"
+          >
+            <!-- Left-Aligned Navigation -->
+            <nav class="mb-3 mb-md-0">
+              <a href="about.html" class="mx-2 text-dark fw-bold text-decoration-none"
+                >About</a
+              >
+              <a href="#" class="mx-2 text-dark fw-bold text-decoration-none"
+                >Locations</a
+              >
+              <a href="#" class="mx-2 text-dark fw-bold text-decoration-none"
+                >FAQs</a
+              >
+              <a href="contact.html" class="mx-2 text-dark fw-bold text-decoration-none"
+                >Contact</a
+              >
+              <a href="#" class="mx-2 text-dark fw-bold text-decoration-none"
+                >Register / Sign In</a
+              >
+              <a href="#" class="mx-2 text-dark fw-bold text-decoration-none"
+                >Careers</a
+              >
+            </nav>
+
+             <!-- Right-Aligned Social Icons -->
+            <div class="d-flex gap-3">
+              <a href="#" class="text-dark"
+                ><i class="fab fa-linkedin fa-2x"></i
+              ></a>
+              <a href="#" class="text-dark"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+              <a href="#" class="text-dark"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+              <a href="#" class="text-dark"
+                ><i class="fab fa-yelp fa-2x"></i
+              ></a>
+              <a href="#" class="text-dark"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+              <a href="#" class="text-dark"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="row text-center">
+          <div class="col-md-1 col-6 mb-3"></div>
+          <div class="col-md-2 col-6 mb-3">
+            <h6 class="fw-bold">Orange County</h6>
+            <a href="tel:(949)450-0777" class="text-dark text-decoration-none"
+              >(949) 450-0777</a
+            >
+          </div>
+          <div class="col-md-2 col-6 mb-3">
+            <h6 class="fw-bold">San Diego County</h6>
+            <a href="tel:(760)603-9400" class="text-dark text-decoration-none"
+              >(760) 603-9400</a
+            >
+          </div>
+          <div class="col-md-2 col-6 mb-3">
+            <h6 class="fw-bold">Los Angeles County</h6>
+            <a href="tel:(626)836-1200" class="text-dark text-decoration-none"
+              >(626) 836-1200</a
+            >
+          </div>
+          <div class="col-md-2 col-6 mb-3">
+            <h6 class="fw-bold">Northern California</h6>
+            <a href="tel:(408)279-1700" class="text-dark text-decoration-none"
+              >(408) 279-1700</a
+            >
+          </div>
+          <div class="col-md-2 col-6 mb-3">
+            <h6 class="fw-bold">Denver</h6>
+            <a href="tel:(720)344-7700" class="text-dark text-decoration-none"
+              >(720) 344-7700</a
+            >
+          </div>
+          <div class="col-md-1 col-6 mb-3"></div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="row align-items-center justify-content-between text-center">
+
+          <!-- Awards Section -->
+          <div class="col-md-8 d-flex justify-content-center flex-wrap gap-4">
+            <img
+              src="images/sponsors/footer-usssa-logo-2.png"
+              alt="Award 1"
+            />
+            <img
+              src="images/sponsors/footer-ndpa-logo.png"
+              alt="Award 2"
+            />
+            <img
+              src="images/sponsors/footer-member-issa-logo.png"
+              alt="Award 3"
+            />
+            <img
+              src="images/sponsors/footer-stop-drowning-now-logo.png"
+              alt="Award 4"
+            />
+          </div>
+
+    <!-- Footer -->
+      <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">           
+            <p class="text-muted">&copy; 2022 Splashes. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
